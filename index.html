@@ -6,17 +6,14 @@
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-			window.addEventListener("onEmbeddedMessagingReady", () => {            
-	console.log( "Inside Prechat API!!" );
-	embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( { "next_proj" : "wilhelmsen" } );
-});
+embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Description" : "Hidden Test Description"});
 
 			embeddedservice_bootstrap.init(
-				'00DGB000003XpW4',
-				'MIAW_Demo',
-				'https://dgb000003xpw42ak-dev-ed.develop.my.site.com/ESWMIAWDemo1733402174614',
+				'00Dbm00000FoK2y',
+				'MIAW_External_Deployment',
+				'https://orgfarm-c6bbf9f8b8-dev-ed.develop.my.site.com/ESWMIAWExternalDeployme1734600561672',
 				{
-					scrt2URL: 'https://dgb000003xpw42ak-dev-ed.develop.my.salesforce-scrt.com'
+					scrt2URL: 'https://orgfarm-c6bbf9f8b8-dev-ed.develop.my.salesforce-scrt.com'
 				}
 			);
 		} catch (err) {
@@ -24,7 +21,8 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://dgb000003xpw42ak-dev-ed.develop.my.site.com/ESWMIAWDemo1733402174614/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://orgfarm-c6bbf9f8b8-dev-ed.develop.my.site.com/ESWMIAWExternalDeployme1734600561672/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
